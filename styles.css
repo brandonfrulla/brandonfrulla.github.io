@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #184d47;
+}
+
+#about {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.center {
+    max-width: 800px; /* adjust to desired maximum width */
+    margin: 0 auto; /* center the div horizontally */
+    padding: 0 20px; /* add left and right padding for the margins */
+}
+
+footer {
+    background-color: #184d47;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed; /* Add this line */
+    bottom: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Add this line */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+li {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+    padding-bottom: 50vh;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  #skills-section,
+  #contact-section {
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  .headshot-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .headshot {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+footer ul
