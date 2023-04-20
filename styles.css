@@ -7,27 +7,45 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
+    padding-bottom: 100px;
 }
 
 header {
-    background-color: #2e2e2e;
-    padding: 1rem;
-}
-
-nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    list-style: none;
+    align-items: center;
+    justify-content: space-between; /* Add this line to align the logo and navigation links */
+    background-color: #184d47; /* Add this line to set the darker background color */
+    padding: 1rem; /* Add or adjust padding as needed */
+    z-index: 1000; /* Add this line to ensure the header is above other elements */
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav li {
     margin-left: 1rem;
-}
-
-nav ul li a {
+  }
+  
+  nav a {
     color: #ffffff;
     text-decoration: none;
-}
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #f3f3f3;
+  }
+  
 
 section {
     padding: 2rem;
@@ -70,16 +88,11 @@ section {
     padding-bottom: 15vh;
 }
 
-li {
-    padding-left: 5vh;
-    padding-right: 5vh;
-}
-
 #main-content {
     display: flex;
     justify-content: center;
     padding-top: 15vh;
-    padding-bottom: 50vh;
+    padding-bottom: 15vh;
   }
   
   .content-container {
@@ -107,5 +120,39 @@ li {
     height: 150px;
     object-fit: cover;
   }
-
+  
+  #resume {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .resume-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #184d47;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .resume-container a:hover {
+    background-color: #12633d;
+    color: #ffffff;
+  }
+  
+  .resume-container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
 footer ul
